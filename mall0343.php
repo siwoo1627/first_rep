@@ -13,11 +13,7 @@ while ($leftDate < 1) {
 	while ($loopYn < 1) {
 
         $service            = "SellerService41";
-
-        if($customer_id == "a0022601"){
-            $service            = "AlphaSellerService41";
-        }
-
+		
 		$operation			= "GetChangedProductOrderList";
 		$detailLevel		= "Full";
 		$version            = "4.1";
