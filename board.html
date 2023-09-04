@@ -1,0 +1,141 @@
+<script src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+	$("#headers").load("header.html");  // 원하는 파일 경로를 삽입하면 된다
+	$("#footers").load("footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+});
+</script>
+
+<style>
+table {
+    width: 700px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-spacing: 1px;
+    font-family: 'Cairo', sans-serif;
+  margin: auto;
+}
+
+caption {
+    font-weight: bold;
+}
+
+table td {
+    padding: 10px;
+    background-color: #eee;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+}
+
+.view,
+.delete {
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.view {
+    background-color: #03A9F4;
+}
+
+.delete {
+    background-color: #E91E63;
+}
+
+.tablefoot {
+    padding: 0;
+    border-bottom: 3px solid #009688;
+}
+</style>
+
+<div id="headers"></div>
+<table>
+	<thead>
+		<tr>
+			<th>Avatar</th>
+			<th>Group</th>
+			<th>Name</th>
+			<th>Points</th>
+			<th>Control</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><img src="https://i.postimg.cc/yYYd1HV1/katara.jpg" alt="img"></td>
+			<td>Ninja</td>
+			<td>Asma Ad</td>
+			<td>120</td>
+			<td>
+				<button class="view">view</button>
+				<button class="delete">Delete</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td><img src="https://i.postimg.cc/Y26YPMSb/zuko.jpg" alt="img"></td>
+			<td rowspan="2">Shades</td>
+			<td>David</td>
+			<td>180</td>
+			<td>
+				<button class="view">view</button>
+				<button class="delete">Delete</button>
+			</td>
+		</tr>
+
+		<tr>
+	  <td><img src="https://i.postimg.cc/yYYd1HV1/katara.jpg" alt="img"></td>
+			<td>Alex</td>
+			<td>160</td>
+			<td>
+				<button class="view">view</button>
+				<button class="delete">Delete</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td><img src="https://i.postimg.cc/Y26YPMSb/zuko.jpg" alt="img"></td>
+			<td rowspan="2">Valhala</td>
+			<td> Kawtar</td>
+			<td>190</td>
+			<td>
+				<button class="view">view</button>
+				<button class="delete">Delete</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td><img src="https://i.postimg.cc/yYYd1HV1/katara.jpg" alt="img"></td>
+			<td>Katara</td>
+			<td>110</td>
+			<td>
+				<button class="view">view</button>
+				<button class="delete">Delete</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td><img src="https://i.postimg.cc/Y26YPMSb/zuko.jpg" alt="img"></td>
+			<td>Union</td>
+			<td>Ashraf</td>
+			<td>90</td>
+			<td>
+				<button class="view">view</button>
+				<button class="delete">Delete</button>
+			</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<td colspan="5" class="tablefoot"></td>
+	</tfoot>
+</table>
+<div id="footers"></div>
